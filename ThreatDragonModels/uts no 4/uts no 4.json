@@ -140,7 +140,7 @@
           {
             "position": {
               "x": 555,
-              "y": 210
+              "y": 230
             },
             "size": {
               "width": 90,
@@ -260,7 +260,7 @@
           {
             "position": {
               "x": 329,
-              "y": 220
+              "y": 240
             },
             "size": {
               "width": 112.5,
@@ -377,7 +377,7 @@
           {
             "position": {
               "x": 760,
-              "y": 220
+              "y": 240
             },
             "size": {
               "width": 120,
@@ -618,7 +618,7 @@
           {
             "position": {
               "x": 550,
-              "y": 340
+              "y": 370
             },
             "size": {
               "width": 100,
@@ -738,7 +738,7 @@
           {
             "position": {
               "x": 770,
-              "y": 350
+              "y": 380
             },
             "size": {
               "width": 120,
@@ -858,53 +858,6 @@
               "storesInventory": false,
               "threats": []
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "42bff205-acbc-45b2-962f-41b6f57eeda5",
-            "source": {
-              "cell": "6ab7247b-f095-4f02-8606-edb9830653d3",
-              "port": "d36d1a2e-c18b-4766-a0df-6739a630c2ce"
-            },
-            "target": {
-              "cell": "89d0a17a-f0e8-4e8c-930a-d74bf4c1d658",
-              "port": "06bfb588-1648-467c-b40e-a90e8f7b1e84"
-            },
-            "vertices": []
           },
           {
             "shape": "flow",
@@ -1083,53 +1036,6 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "575651ce-fa91-49a5-b02f-07aa6346a131",
-            "source": {
-              "cell": "89d0a17a-f0e8-4e8c-930a-d74bf4c1d658",
-              "port": "d36d1a2e-c18b-4766-a0df-6739a630c2ce"
-            },
-            "target": {
-              "cell": "5618516a-8da1-4481-802c-faed635d5f21",
-              "port": "06bfb588-1648-467c-b40e-a90e8f7b1e84"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
             "id": "b46ae45f-df04-4129-bcf1-80fffc759727",
             "source": {
               "cell": "5618516a-8da1-4481-802c-faed635d5f21",
@@ -1187,12 +1093,146 @@
               "port": "07685632-9f3b-4d2c-bfeb-291f5b6a253f"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "malware ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "7064c5ea-6cae-4863-8ae8-6eebac166eea",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "scan antivirus, dan Validasi File",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "malware"
+            ],
+            "id": "575651ce-fa91-49a5-b02f-07aa6346a131",
+            "source": {
+              "cell": "89d0a17a-f0e8-4e8c-930a-d74bf4c1d658",
+              "port": "d36d1a2e-c18b-4766-a0df-6739a630c2ce"
+            },
+            "target": {
+              "cell": "5618516a-8da1-4481-802c-faed635d5f21",
+              "port": "06bfb588-1648-467c-b40e-a90e8f7b1e84"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 11,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Cookie",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "1e687eeb-a29c-4082-9679-60c85f36c6c5",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Cookie Flags, session expiry",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Cooki"
+            ],
+            "id": "42bff205-acbc-45b2-962f-41b6f57eeda5",
+            "source": {
+              "cell": "6ab7247b-f095-4f02-8606-edb9830653d3",
+              "port": "d36d1a2e-c18b-4766-a0df-6739a630c2ce"
+            },
+            "target": {
+              "cell": "89d0a17a-f0e8-4e8c-930a-d74bf4c1d658",
+              "port": "06bfb588-1648-467c-b40e-a90e8f7b1e84"
+            },
+            "vertices": []
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
